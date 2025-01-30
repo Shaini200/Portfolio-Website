@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio Profile</title>
+    
+    <!--boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header class="active">
+        <a href="#" class="logo">SHAINI</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Resume</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!--bars background-->
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!--home section-->
+    <section class="home active">
+        <div class="home-detail">
+            <h1>Shaini Kavindya</h1>
+            <h2>I'm a  
+                <span style="--i:2" data-text="Software Engineer"> Software Engineer</span>
+                <span style="--i:1" data-text="Machine Learning Engineer"> Machine Learning Engineer</span>
+            </h2>
+            <div class="btn-sci">
+                <a href="https://drive.google.com/drive/folders/1Dfvtdh1qpGoXPEZE8LVPaaoGUMWZcI7i" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/Shaini200"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/shaini-kavindya-83536228b/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://medium.com/@shainikavindya2"><i class='bx bxl-medium' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/my.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--resume-->
+    <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Choose Me?</h2><br><br>
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About me</button>
+            </div>
+            <div class="resume-box">
+                <div class="resume-detail experience active">
+                    <h2 class="heading">My <span>Experience</span></h2><br><br><br>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2021 Apr-Oct</p>
+                            <h3>Autocad Drawing Trainer</h3>
+                            <p class="company">District Secretariat-Anuradhapura</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2><br><br><br>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2021 - Present</p>
+                            <h3>University of  Vavuniya</h3>
+                            <p class="company">Bachelors of Information & Communication Technology (Honours)</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year"> 2017-2019</p>
+                            <h3>Balalla U.B. Wanninayaka National School   </h3>
+                            <p class="company">  Advanced Level Examination in Technology Stream</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2><br><br><br>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class='bx bxl-java'></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-python' ></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-html5' ></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-css3' ></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-php' ></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-javascript' ></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Autocad</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="resume-detail aboutme">
+                    <h2 class="heading">About <span>me</span></h2><br><br>
+                    <p class="desc">  I am a undergraduate student with a strong foundation in software development and
+                        problem-solving skills. A passionate, self-motivated educator with a strong work
+                        ethic, the ability to adapt to challenges, and the ability to thrive under pressure
+                        while meeting tight deadlines.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name <span>S.A.Shaini Kavindya</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Gender <span>Female</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Age <span>24 Years old</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Status <span>Unmarried</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Address <span>No.15/2, Medagama, Mahagalkadawala</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Nationality <span>Sri Lanka</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Phone <span>077 1602512</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Email <span>shainikavindya2@gmail.com</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Language <span>Sinhala, English</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Portfolio-->
+    <section class="portfolio">
+        <h2 class="heading">Projects</h2><br><br>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="numb">01</p>
+                    <h3>Face Recognition Student Attendence Management System</h3>
+                    <p>The project is machine learning project. A face recognition student attendance
+                        management system serves multiple purposes, offering a modern solution to
+                        traditional attendance tracking methods by using Python</p>
+                        <div class="tech">
+                            <p>Python</p>
+                        </div>
+                        <div class="live-github">
+                            <!--<a href="#"><i class='bx bx-left-arrow-alt'></i><span>Live Project</span></a>-->
+                            <a href="https://github.com/Shaini200/Face-Recognition-Attendence-System"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">02</p>
+                    <h3>Chatting Application</h3>
+                    <p>The project is a basic Chatting Application built using Java Swing, AWT, and Socket
+                         Programming. It provides a graphical user interface for real-time messaging between a client and server.</p>
+                        <div class="tech">
+                            <p>Java</p>
+                        </div>
+                        <div class="live-github">
+                            <!--<a href="#"><i class='bx bx-left-arrow-alt'></i><span>Live Project</span></a>-->
+                            <a href="https://github.com/Shaini200/Chatting-Application"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">03</p>
+                    <h3>University Management System</h3>
+                    <p>The project is a University Management System designed to streamline and manage administrative 
+                        and academic tasks.</p>
+                        <div class="tech">
+                            <p>Java</p>
+                        </div>
+                        <div class="live-github">
+                            <!--<a href="#"><i class='bx bx-left-arrow-alt'></i><span>Live Project</span></a>-->
+                            <a href="https://github.com/Shaini200/University-Management-System"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">04</p>
+                    <h3>Text To Voice Application</h3>
+                    <p>This Python-based Text-to-Speech (TTS) application converts 
+                        written text into spoken words using the gTTS (Google Text-to-Speech) library. 
+                        It provides an easy-to-use interface where users can enter text, generate speech, 
+                        and save the output as an audio file.</p>
+                        <div class="tech">
+                            <p>Python</p>
+                        </div>
+                        <div class="live-github">
+                            <!--<a href="#"><i class='bx bx-left-arrow-alt'></i><span>Live Project</span></a>-->
+                            <a href="https://github.com/Shaini200/Text-to-Voice-App"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">05</p>
+                    <h3> Weather Application </h3>
+                    <p>To create Weather app in python application using Tkinter and the OpenWeatherMap API.</p>
+                        <div class="tech">
+                            <p>Python</p>
+                        </div>
+                        <div class="live-github">
+                            <!--<a href="#"><i class='bx bx-left-arrow-alt'></i><span>Live Project</span></a>-->
+                            <a href="https://github.com/Shaini200/Weather-App"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">06</p>
+                    <h3> Screen Recorder Application </h3>
+                    <p>This is a GUI-based Screen Recording Application built with Python and Tkinter. 
+                        It allows users to record their screen, pause, resume, and save videos using the pyscreenrec library</p>
+                        <div class="tech">
+                            <p>Python</p>
+                        </div>
+                        <div class="live-github">
+                            <!--<a href="#"><i class='bx bx-left-arrow-alt'></i><span>Live Project</span></a>-->
+                            <a href="https://github.com/Shaini200/Screen-Recoder"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="images/n1.png" alt="">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/n2.png" alt="">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/n3.png" alt="">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/n4.png" alt="">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/n5.png" alt="">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/n6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                    <button class="arrow-right"><i class='bx bxs-chevron-right' ></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--contact-->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's build something great together</h2>
+                <p class="desc">I’d love to connect with you! Whether you have a project idea, 
+                    a job opportunity, or just want to say hello, feel free to reach out.
+                </p>
+                <div class="contact-detail">
+                    <i class='bx bxs-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+94) 77 160 2512</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-envelope' ></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>shainikavindya2@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-map' ></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>No.15/2, Medagama, Mahagalkadawala, Galgamuwa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact  <span>Me!</span></h2><br><br><br>
+                    <div class="field-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        // Initialize EmailJS
+        (function(){
+            emailjs.init("shainikavindya2@gmail.com"); // Replace with your EmailJS User ID
+        })();
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+            .then(response => {
+                alert("Message Sent Successfully!");
+                document.getElementById("contactForm").reset();
+            }, error => {
+                alert("Failed to Send Message!");
+            });
+        });
+    </script>
+    
+</body>
+</html>
