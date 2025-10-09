@@ -172,8 +172,8 @@ section.active{
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: 0.05rem var(--main-color);
-    animation: display-text 15s linear infinite;
-    animation-delay: calc(-4s * var(--i));
+    /*animation: display-text 15s linear infinite;
+    animation-delay: calc(-4s * var(--i));*/
 }
 
 @keyframes display-text{
@@ -190,7 +190,7 @@ section.active{
     color: var(--main-color);
     white-space: nowrap;
     overflow: hidden;
-    animation: fill-text 4s linear infinite;
+    /*animation: fill-text 4s linear infinite;*/
 }
 
 @keyframes fill-text{
@@ -268,7 +268,7 @@ section.active{
     height: 50rem;
     background: conic-gradient(transparent, transparent, transparent, var(--main-color));
     transform: rotate(0deg);
-    animation: rotate-border 12s linear infinite;
+    /*animation: rotate-border 12s linear infinite;*/
 }
 
 .home-img .img-box::after{
@@ -839,5 +839,6 @@ section.active{
         font-size: 3.5rem;
     }
 }
+
 
 
