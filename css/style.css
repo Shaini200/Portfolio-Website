@@ -147,18 +147,13 @@ section.active{
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: 0.05rem var(--main-color);
-<<<<<<< HEAD
     /*animation: display-text 15s linear infinite;
     animation-delay: calc(-4s * var(--i));*/
-=======
-    
->>>>>>> 5f4db39 (added new file)
-}
+}   
 
 @keyframes display-text{
-    25%,100%{
-        display: none;
-    }
+    0%,20%{ display: inline-block; }
+    25%,100%{ display: none; }
 }
 
 .home-detail h2 span::before{
@@ -169,7 +164,7 @@ section.active{
     color: var(--main-color);
     white-space: nowrap;
     overflow: hidden;
-    /*animation: fill-text 4s linear infinite;*/
+    animation: fill-text 4s linear infinite;
 }
 
 @keyframes fill-text{
@@ -247,7 +242,7 @@ section.active{
     height: 50rem;
     background: conic-gradient(transparent, transparent, transparent, var(--main-color));
     transform: rotate(0deg);
-    /*animation: rotate-border 12s linear infinite;*/
+    animation: rotate-border 12s linear infinite;
 }
 
 .home-img .img-box::after{
