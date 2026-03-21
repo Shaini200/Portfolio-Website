@@ -10,59 +10,51 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
+
+
 const activePage = () => {
     const header = document.querySelector('header');
-    const barsBox = document.querySelector('.bars-box');
 
+    header.classList.add('active'); // remove delay
 
-    header.classList.remove('active');
-    setTimeout(() => {
-        header.classList.add('active')
-    }, 1100);
-
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-    });
-
-    barsBox.classList.remove('active');
-    setTimeout(() => {
-        barsBox.classList.add('active')
-    }, 1100);
-
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
+    navLinks.forEach(link => link.classList.remove('active'));
+    sections.forEach(section => section.classList.remove('active'));
 
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
 
-navLinks.forEach((link, idx) => {
-    link.addEventListener('click', () => {
-        if (!link.classList.contains('active')) {
-            activePage();
-            link.classList.add('active');
 
-            setTimeout(() => {
-                sections[idx].classList.add('active');
-            }, 1100);
-        }
+
+navLinks.forEach((link, idx) => {
+    link.addEventListener('click', (e) => {
+
+        e.preventDefault(); 
+
+        activePage();
+
+        link.classList.add('active');
+
+        sections[idx].classList.add('active');
+
+        sections[idx].scrollIntoView({ behavior: 'smooth' });
     });
 });
 
 
-logoLink.addEventListener('click', () => {
-    if(!navLinks[0].classList.contains('active')){
-        activePage();
+logoLink.addEventListener('click', (e) => {
 
-        navLinks[0]?.classList.add('active');
+    e.preventDefault(); 
 
-        setTimeout(() => {
-            sections[0].classList.add('active');
-        }, 1100);
-    }
+    activePage();
+
+    navLinks[0].classList.add('active');
+
+    sections[0].classList.add('active');
+
+    sections[0].scrollIntoView({ behavior: 'smooth' });
 });
+
 
 
 
@@ -130,3 +122,6 @@ arrowleft.addEventListener('click', () => {
     }
     activePortfolio()
 });
+
+
+

@@ -29,7 +29,7 @@
     </header>
 
     <!--bars background-->
-    <div class="bars-box active">
+    <div >
         <div class="bar" style="--i:6;"></div>
         <div class="bar" style="--i:5;"></div>
         <div class="bar" style="--i:4;"></div>
@@ -43,8 +43,8 @@
         <div class="home-detail">
             <h1>Shaini Kavindya</h1>
             <h2>I'm a  
-                <span style="--i:2" data-text="Software Engineer"> Software Engineer</span>
-                <span style="--i:1" data-text="Machine Learning Engineer"> Machine Learning Engineer</span>
+                <span  data-text="Software Engineer"> Software Engineer</span>
+                <span  data-text="Machine Learning Engineer"> Machine Learning Engineer</span>
             </h2>
             <div class="btn-sci">
                 <a href="https://drive.google.com/drive/folders/1Dfvtdh1qpGoXPEZE8LVPaaoGUMWZcI7i" class="btn">Download CV</a>
@@ -85,6 +85,12 @@
                             <h3>Autocad Drawing Trainer</h3>
                             <p class="company">District Secretariat-Anuradhapura</p>
                         </div>
+
+                        <div class="resume-item">
+                            <p class="year">2025 May-Nov</p>
+                            <h3>Intern Network and Telecommunication Officer</h3>
+                            <p class="company">SLT Mobitel-Chilaw</p>
+                        </div>
                     </div>
                 </div>
 
@@ -100,9 +106,14 @@
                             <p class="company">Bachelors of Information & Communication Technology (Honours)</p>
                         </div>
                         <div class="resume-item">
+                            <p class="year"> 2020-2021</p>
+                            <h3>College of Technology-Anuradhapura </h3>
+                            <p class="company">National Certificate in Engineering Draughtsmanship</p>
+                        </div>
+                        <div class="resume-item">
                             <p class="year"> 2017-2019</p>
                             <h3>Balalla U.B. Wanninayaka National School   </h3>
-                            <p class="company">  Advanced Level Examination in Technology Stream</p>
+                            <p class="company">Advanced Level Examination in Technology Stream</p>
                         </div>
                     </div>
                 </div>
@@ -162,7 +173,7 @@
                             <p>Gender <span>Female</span></p>
                         </div>
                         <div class="resume-item">
-                            <p>Age <span>24 Years old</span></p>
+                            <p>DOB <span>2000.07.18</span></p>
                         </div>
                         <div class="resume-item">
                             <p>Status <span>Unmarried</span></p>
@@ -360,7 +371,9 @@
         </div>
     </section>
 
+    <form id="contact-form">
 
+    </form>
     <script src="js/script.js"></script>
 
     <script>
@@ -369,14 +382,14 @@
             emailjs.init("shainikavindya2@gmail.com"); // Replace with your EmailJS User ID
         })();
 
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+           // event.preventDefault();
+            emailjs.init("93ZJCAcBTgXIqiCvH");
+            emailjs.sendForm("service_9zp49a9", "template_zk4navq", this)
             .then(response => {
                 alert("Message Sent Successfully!");
-                document.getElementById("contactForm").reset();
-            }, error => {
+                document.getElementById("contact-form").reset();
+            }, function(error) {
                 alert("Failed to Send Message!");
             });
         });
