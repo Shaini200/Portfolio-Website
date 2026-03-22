@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Shaini Kavindya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">Shaini<span>.</span></a>
+    <button class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-tag">Get in Touch</p>
+      <h1>Contact <em>Me</em></h1>
+    </div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h2 class="section-title">Let's build something <em>great</em> together</h2>
+        <p>I'd love to connect with you! Whether you have a project idea, a job opportunity, or just want to say hello, feel free to reach out.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class='bx bxs-phone'></i></div>
+            <div>
+              <p class="ci-label">Phone</p>
+              <p>(+94) 77 160 2512</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class='bx bxs-envelope'></i></div>
+            <div>
+              <p class="ci-label">Email</p>
+              <p>shainikavindya2@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class='bx bxs-map'></i></div>
+            <div>
+              <p class="ci-label">Address</p>
+              <p>No.15/2, Medagama, Mahagalkadawala, Galgamuwa, Sri Lanka</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://github.com/Shaini200" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/shaini-kavindya-83536228b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://medium.com/@shainikavindya2" target="_blank"><i class='bx bxl-medium'></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form id="contactForm" class="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="from_name">Full Name</label>
+              <input id="from_name" name="from_name" type="text" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="from_email">Email Address</label>
+              <input id="from_email" name="from_email" type="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="text" placeholder="+94 77 xxx xxxx">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="What's this about?" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+            Send Message <i class='bx bx-send' id="btnIcon"></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="nav-logo">Shaini<span>.</span></a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://github.com/Shaini200" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/shaini-kavindya-83536228b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://medium.com/@shainikavindya2" target="_blank"><i class='bx bxl-medium'></i></a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Shaini Kavindya. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
